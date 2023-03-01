@@ -1,6 +1,7 @@
 package net.ko71k.yummod;
 
 import com.mojang.logging.LogUtils;
+import net.ko71k.yummod.block.ModBlocks;
 import net.ko71k.yummod.item.ModCreativeModeTabs;
 import net.ko71k.yummod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -31,6 +32,7 @@ public class YumMod
         modEventBus.addListener(this::commonSetup);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -50,7 +52,12 @@ public class YumMod
             event.accept(ModItems.WHEAT_WRAP);
             event.accept(ModItems.TOMATO);
     }
+        if(event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(ModBlocks.KITCHEN_BLOCK);
+        }
+
         if (event.getTab() == ModCreativeModeTabs.MYFOOD) {
+            event.accept(ModBlocks.KITCHEN_BLOCK);
             event.accept(ModItems.WHEAT_WRAP);
             event.accept(ModItems.TOMATO);
         }

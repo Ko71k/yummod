@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "yummod:block/kitchen_block" }
+  }
+}

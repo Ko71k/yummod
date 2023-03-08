@@ -5,6 +5,7 @@ import net.ko71k.yummod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,7 +21,14 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> KITCHEN_BLOCK = registerBlock("kitchen_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)
-                    .strength(6f).requiresCorrectToolForDrops()));
+                    .strength(6f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> KITCHEN_BLOCK_2 = registerBlock("kitchen_block2",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(6f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

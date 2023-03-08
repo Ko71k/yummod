@@ -50,16 +50,40 @@ public class YumMod
     {
         if (event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.WHEAT_WRAP);
+            event.accept(ModItems.BUN);
+            event.accept(ModItems.BUN_SLICE);
             event.accept(ModItems.TOMATO);
+            event.accept(ModItems.TOMATO_SLICE);
+            event.accept(ModItems.CHEESE);
+            event.accept(ModItems.CHEESE_SLICE);
+            event.accept(ModItems.CUCUMBER);
+            event.accept(ModItems.CUCUMBER_SLICE);
+            event.accept(ModItems.LETTUCE);
+            event.accept(ModItems.LETTUCE_LEAF);
+            event.accept(ModItems.CERAMIC_BOWL);
+            event.accept(ModItems.CERAMIC_PLATE);
     }
         if(event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(ModBlocks.KITCHEN_BLOCK);
+            event.accept(ModBlocks.KITCHEN_BLOCK_2);
         }
 
         if (event.getTab() == ModCreativeModeTabs.MYFOOD) {
+            event.accept(ModBlocks.KITCHEN_BLOCK_2);
             event.accept(ModBlocks.KITCHEN_BLOCK);
             event.accept(ModItems.WHEAT_WRAP);
+            event.accept(ModItems.BUN);
+            event.accept(ModItems.BUN_SLICE);
             event.accept(ModItems.TOMATO);
+            event.accept(ModItems.TOMATO_SLICE);
+            event.accept(ModItems.CHEESE);
+            event.accept(ModItems.CHEESE_SLICE);
+            event.accept(ModItems.CUCUMBER);
+            event.accept(ModItems.CUCUMBER_SLICE);
+            event.accept(ModItems.LETTUCE);
+            event.accept(ModItems.LETTUCE_LEAF);
+            event.accept(ModItems.CERAMIC_BOWL);
+            event.accept(ModItems.CERAMIC_PLATE);
         }
     }
 

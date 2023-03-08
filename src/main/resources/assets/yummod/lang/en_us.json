@@ -1,7 +1,19 @@
 {
-  "item.yummod.wheat_wrap": "Wheat Wrap",
+  "item.yummod.wheat_wrap": "Wheat wrap",
+  "item.yummod.bun": "Bun",
+  "item.yummod.bun_slice": "Bun slice",
   "item.yummod.tomato": "Tomato",
-  "block.yummod.kitchen_block": "Kitchen Block",
+  "item.yummod.tomato_slice": "Tomato slice",
+  "item.yummod.cheese": "Cheese",
+  "item.yummod.cheese_slice": "Cheese slice",
+  "item.yummod.cucumber": "Cucumber",
+  "item.yummod.cucumber_slice": "Cucumber slice",
+  "item.yummod.lettuce": "Lettuce",
+  "item.yummod.lettuce_leaf": "Lettuce leaf",
+  "item.yummod.ceramic_bowl": "Ceramic bowl",
+  "item.yummod.ceramic_plate": "Ceramic plate",
 
+  "block.yummod.kitchen_block": "Kitchen block",
+  "block.yummod.kitchen_block2": "Kitchen block2",
   "creativemodetab.my_food_tab": "My Food"
 }
